@@ -4,11 +4,10 @@ import QuestaoModel from "../model/QuestaoModel";
 import Questionario from "../components/Questionario";
 import { useRouter } from "next/router";
 
-const BASE_URL = 'https://quiz-two-lime.vercel.app/api';
-
 export default function Home() {
 
   const router = useRouter();
+  const base = process.env.BASE_URL;
 
   const [questao, setQuestao] = useState(null);
   const [idsDasQuestoes, setIdsDasQuestoes] = useState([]);
@@ -16,13 +15,13 @@ export default function Home() {
   const [isUltimaPergunta, setIsUltimaPergunta] = useState(false);
 
   async function carregarIdsQuestoes() {
-    const resp = await fetch(`${BASE_URL}/questoes`)
+    const resp = await fetch(`${base}/questoes`)
     const idsDasQuestoes = await resp.json();
     setIdsDasQuestoes(idsDasQuestoes);
   }
 
   async function carregarQuestao(id: number) {
-    const resp = await fetch(`${BASE_URL}/questoes/${id}`)
+    const resp = await fetch(`${base}/questoes/${id}`)
     const questao = await resp.json();
     
     setQuestao(QuestaoModel.fromObject(questao));

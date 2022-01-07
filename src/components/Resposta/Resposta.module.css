@@ -66,27 +66,22 @@
 @keyframes acertou {
     20% {
         transform: translateY(-3px)
-                    rotateX(20deg)
                     scale(1.03);
     }
     40% {
         transform: translateY(+2px)
-                    rotateX(-18deg)
                     scale(1.03);
     }
     60% {
         transform: translateY(-2px)
-                    rotateX(15deg)
                     scale(1.03);
     }
     75% {
         transform: translateY(+1px)
-                    rotateX(-12deg)
                     scale(1.03);
     }
     90% {
         transform: translateY(-1px)
-                    rotateX(10deg)
                     scale(1.03);
     }
 
