@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
   env: {
-    BASE_URL: 'http://localhost:3000/api'
+    BASE_URL: 'https://quiz-two-lime.vercel.app/api'
   }
 }
