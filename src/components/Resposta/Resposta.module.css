@@ -1,0 +1,113 @@
+.resposta {
+    cursor: pointer;
+    display: block;
+    border-radius: 5px;
+    margin: 7px 0;
+    position: relative;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px #00000033;
+    background: #fafafa;
+    color: #303030;
+    border: 2px solid transparent;
+    transform: scale(1);
+}
+
+.resposta:hover {
+    transform: scale(1.01);
+}
+
+.resposta.acertou {
+    animation: acertou 1s;
+    background: #2bAA6D;
+    color: #fafafa;
+    transform: scale(1.03);
+}
+
+.resposta.errou {
+    animation: errou 1s;
+    background: #E44A4C;
+    color: #fafafa;
+    transform: scale(1.03);
+}
+
+.resposta.acertou span, .resposta.errou span {
+    background: transparent !important;
+}
+
+.resposta .card {
+    position: relative;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.resposta .card h3 {
+    font-size: 0.8em
+}
+
+.resposta .card span {
+    position: absolute;
+    left: 10px;
+    font-size: 0.8em;
+    color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: 0.3s
+}
+
+@keyframes acertou {
+    20% {
+        transform: translateY(-3px)
+                    rotateX(20deg)
+                    scale(1.03);
+    }
+    40% {
+        transform: translateY(+2px)
+                    rotateX(-18deg)
+                    scale(1.03);
+    }
+    60% {
+        transform: translateY(-2px)
+                    rotateX(15deg)
+                    scale(1.03);
+    }
+    75% {
+        transform: translateY(+1px)
+                    rotateX(-12deg)
+                    scale(1.03);
+    }
+    90% {
+        transform: translateY(-1px)
+                    rotateX(10deg)
+                    scale(1.03);
+    }
+
+}
+
+@keyframes errou {
+    25% {
+        transform: translateX(-4px)
+                    scale(1.03);
+    }
+    50% {
+        transform: translateX(+3px)
+                    scale(1.03);
+    }
+    75% {
+        transform: translateX(-3px)
+                    scale(1.03);
+    }
+    90% {
+        transform: translateX(+1px)
+                    scale(1.03);
+    }
+
+}

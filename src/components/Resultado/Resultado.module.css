@@ -1,0 +1,84 @@
+.resultado {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.resultado h1 {
+    font-size: 1.7em;
+    margin: 0;
+    padding: 0;
+}
+
+.pontuacao {
+    margin: 20px 0;
+    display: flex;
+}
+
+.pontuacao div {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 15px;
+    border-radius: 50%;
+    font-size: 2em;
+    font-weight: 600;
+    color: #333;
+    position: relative;
+    flex-direction: column;
+}
+
+.pontuacao div span {
+    font-size: 0.35em;
+    font-weight: 500;
+    color: #333;
+}
+
+.pontuacao div::after {
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid #6c54d8;
+    animation: rotation 7s infinite ease-in-out;
+}
+
+.pontuacao div:nth-child(3) {
+    background-color: #BCE596;
+}
+.pontuacao div:nth-child(3)::after {
+    outline: 3px dashed #BCE596;
+}
+
+
+.pontuacao div:nth-child(2) {
+    background-color: #85D4F2;
+}
+.pontuacao div:nth-child(2)::after {
+    outline: 3px dashed #85D4F2;
+}
+
+
+.pontuacao div:nth-child(1) {
+    background-color: #F2C866;
+}
+.pontuacao div:nth-child(1)::after {
+    outline: 3px dashed #F2C866;
+}
+
+
+@keyframes rotation {
+    from {
+        transform: rotateZ(0deg)
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}

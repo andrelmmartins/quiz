@@ -1,0 +1,17 @@
+.temporizador {
+    font-size: 16pt;
+    font-weight: 500;
+    border-radius: 0;
+}
+
+.temporizador svg path {
+    stroke-width: 5;
+}
+
+.temporizador svg path:nth-child(1) {
+    display: none;
+}
+
+.temporizador div {
+    color: #fafafa !important;
+}
