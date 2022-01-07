@@ -12,3 +12,14 @@
     font-size: 1.5em;
     text-align: center;
 }
+
+@media screen and (max-width: 420px) {
+    
+    .enunciado {
+        width: 250px;
+    }
+
+    .enunciado h1{
+        font-size: 1rem;
+    }
+}

@@ -15,3 +15,11 @@
     background-color: #9f90F5;
     transform: scale(1.02);
 } 
+
+@media screen and (max-width: 420px) {
+    .botao {
+        height: 30px;
+        width: 140px;
+        font-size: 0.7em;
+    }
+}

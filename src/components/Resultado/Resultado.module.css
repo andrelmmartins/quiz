@@ -82,3 +82,40 @@
         transform: rotateZ(360deg);
     }
 }
+
+@media screen and (max-width: 420px) {
+
+    .resultado h1 {
+        font-size: 1.1em;
+    }
+
+    .pontuacao {
+        margin: 15px 0;
+    }
+
+    .pontuacao div {
+        width: 75px;
+        height: 75px;
+        font-size: 1.3em;
+        margin: 5px 5px;
+        line-height: 1.1;
+    }
+
+    .pontuacao div::after {
+        border-width: 2px;
+    }
+
+    .pontuacao div:nth-child(3)::after {
+        outline: 1px dashed #BCE596;
+    }
+    .pontuacao div:nth-child(2)::after {
+        outline: 1px dashed #85D4F2;
+    }
+    .pontuacao div:nth-child(1)::after {
+        outline: 1px dashed #F2C866;
+    }
+
+    .pontuacao div span {
+        font-size: 0.4em
+    }
+}

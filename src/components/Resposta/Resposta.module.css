@@ -106,3 +106,10 @@
     }
 
 }
+
+@media screen and (max-width: 420px) {
+    .resposta .card {
+        height: 40px;
+        width: 250px;
+    }
+}
